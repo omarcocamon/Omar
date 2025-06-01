@@ -6,37 +6,68 @@
   <title>¡Feliz Cumpleaños Sharon!</title>
   <style>
     body {
-      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      margin: 0;
+      padding: 0;
+      background: url('https://i.imgur.com/EH7Hf1Q.jpg') no-repeat center center fixed;
+      background-size: cover;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
-      padding: 50px;
-      color: #4b2e2e;
+      color: #fff;
+      overflow: hidden;
     }
+
+    .container {
+      padding: 50px 20px;
+      backdrop-filter: blur(5px);
+    }
+
     h1 {
       font-size: 3em;
       margin-bottom: 10px;
+      animation: floatText 3s ease-in-out infinite;
     }
+
     p {
       font-size: 1.3em;
       margin-top: 20px;
+      animation: floatText 3s ease-in-out infinite;
     }
+
     .heart {
       font-size: 4em;
       color: #ff6b81;
       animation: pulse 1.5s infinite;
     }
+
+    .rainbow {
+      font-size: 3em;
+      animation: floatText 4s ease-in-out infinite alternate;
+    }
+
     @keyframes pulse {
       0% { transform: scale(1); }
       50% { transform: scale(1.2); }
       100% { transform: scale(1); }
     }
+
+    @keyframes floatText {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
-  <div class="heart">💖</div>
-  <h1>¡Feliz Cumpleaños Sharon!</h1>
-  <p>Hoy celebramos a una persona única, increíble y llena de luz.</p>
-  <p>Gracias por ser alegría en mi vida. Que este nuevo año te regale todo lo hermoso que mereces.</p>
-  <p>🎂 ¡Disfruta tu día al máximo! 🎉</p>
+  <div class="container">
+    <div class="rainbow">🌈🌈🌈</div>
+    <div class="heart">💖</div>
+    <h1>¡Feliz Cumpleaños Sharon!</h1>
+    <p>Hoy celebramos a alguien increíble, incluso si hoy no te sientes así.</p>
+    <p>Fuiste mi alegría, y hoy quiero devolverte una sonrisa.</p>
+    <p>Aunque estés triste, recuerda que tu luz no se apaga. Eres especial.</p>
+    <p>Deseo que este nuevo año te abrace con amor, paz y esperanza.</p>
+    <p>🎂 ¡Te lo mereces todo, Sharon! 🎉</p>
+    <div class="rainbow">🌈🌈🌈</div>
+  </div>
 </body>
 </html>
